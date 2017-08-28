@@ -9,8 +9,13 @@
 /* end of custom css */
 
 
-section#why.section {
+#why.section {
   padding: 0px !important;
+}
+
+#counter.section{
+  padding: 0px !important;
+  background-color: white;
 }
 
 .row.contents{
