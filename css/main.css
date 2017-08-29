@@ -13,6 +13,16 @@
   padding: 0px !important;
 }
 
+#about-info.section {
+  padding: 10px !important;
+  background-color: rgb(63, 81, 181);
+  color: black;
+}
+#benefits h1{
+  color: white;
+}
+
+
 #counter.section{
   padding: 0px !important;
   background-color: white;
@@ -22,6 +32,64 @@
   margin-right: 10px;
 }
 
+
+/* About section */
+
+.about-area {
+  background: url(../img/about-image-2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-color:#00FFFF;
+  color: #fff;
+  overflow: hidden;
+  padding: 90px 0;
+  max-height: 70vh;
+}
+
+.about-area .sticky-navigation {
+  background: transparent;
+}
+
+.about-area .contents h1 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.about-area .contents p {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.about-area .contents .btn {
+  margin: 15px;
+}
+
+@media (min-width: 1200px) {
+  .about-area {
+    padding: 280px 0;
+  }
+  /* .about-area h1 {
+    font-size: 100px !important;
+    font-weight: 200;
+  } */
+  #about-title h1{
+    font-size: 400px !important;
+    font-weight: 200;
+  }
+}
+
+#about-title h1{
+  font-size: 100px !important;
+  font-weight: 300;
+  color: white;
+}
+
+
+.about p{
+  font-size: 17px;
+}
+/* End of About section */
 
 /* 
  */
