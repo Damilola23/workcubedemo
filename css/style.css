@@ -144,3 +144,129 @@
   color: white;
  }
  
+
+ .rounded-circle{
+   border-radius: 50%;
+ }
+
+/* developer */
+ .developer-area {
+  background: url(../img/WorkCubeHeaderimage.jpg) no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-color: #3f51b5;
+  color: #fff;
+  overflow: hidden;
+  padding: 90px 0;
+  max-height: 70vh;
+  background-blend-mode: overlay;
+ }
+ 
+ .developer-area .sticky-navigation {
+  background: transparent;
+ }
+ 
+ .developer-area .contents h1 {
+  font-size: 40px;
+  font-weight: 100;
+ }
+ 
+ .developer-area .contents p {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+ }
+ 
+ .developer-area .contents .btn {
+  margin: 15px;
+ }
+ 
+ @media (min-width: 1200px) {
+  .developer-area {
+    padding: 280px 0;
+  }
+ }
+
+
+ /* skills */
+ .skills-area {
+  background: url(../img/car.jpg) no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  overflow: hidden;
+  padding: 90px 0;
+  max-height: 70vh;
+  background-blend-mode: overlay;
+ }
+ 
+ .skills-area .sticky-navigation {
+  background: transparent;
+ }
+ 
+ .skills-area .contents h1 {
+  font-size: 40px;
+  font-weight: 100;
+ }
+ 
+ .skills-area .contents p {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+ }
+ 
+ .skills-area .contents .btn {
+  margin: 15px;
+ }
+ 
+ @media (min-width: 1200px) {
+  .skills-area {
+    padding: 280px 0;
+  }
+  /* .skills-area h1 {
+    font-size: 100px !important;
+    font-weight: 200;
+  } */
+
+/* fees section */
+
+.fees-area {
+  background: url(../img/car.jpg) no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  overflow: hidden;
+  padding: 90px 0;
+  max-height: 70vh;
+  background-blend-mode: overlay;
+ }
+ 
+ .fees-area .sticky-navigation {
+  background: transparent;
+ }
+ 
+ .fees-area .contents h1 {
+  font-size: 40px;
+  font-weight: 100;
+ }
+ 
+ .fees-area .contents p {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+ }
+ 
+ .fees-area .contents .btn {
+  margin: 15px;
+ }
+ 
+ @media (min-width: 1200px) {
+  .fees-area {
+    padding: 280px 0;
+  }
+  /* .fees-area h1 {
+    font-size: 100px !important;
+    font-weight: 200;
+  } */
