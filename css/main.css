@@ -31,7 +31,9 @@
 .row.contents{
   margin-right: 10px;
 }
-
+.navbar.about{
+  box-shadow: none;
+}
 
 /* About section */
 
@@ -74,14 +76,14 @@
     font-weight: 200;
   } */
   #about-title h1{
-    font-size: 400px !important;
-    font-weight: 200;
+    font-size: 200px !important;
+    font-weight: 100;
   }
 }
 
 #about-title h1{
-  font-size: 100px !important;
-  font-weight: 300;
+  font-size: 70px !important;
+  font-weight: 100;
   color: white;
 }
 
