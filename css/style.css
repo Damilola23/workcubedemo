@@ -31,21 +31,23 @@
 .row.contents{
  margin-right: 10px;
 }
-.navbar{
+.navbar, .navbar.fees, .navbar.skills{
  box-shadow: none;
 }
 
 /* About section */
 
 .about-area {
- background: url(../img/about-image-2.jpg) no-repeat;
+ background: url(../img/header1.jpg) no-repeat;
  background-size: cover;
  background-position: center bottom;
- background-color:#00FFFF;
+ background-color: rgba(21, 140, 226, 0.46);
  color: #fff;
  overflow: hidden;
  padding: 90px 0;
  max-height: 70vh;
+ background-blend-mode: overlay;
+
 }
 
 .about-area .sticky-navigation {
@@ -103,6 +105,7 @@
   overflow: hidden;
   padding: 90px 0;
   max-height: 70vh;
+  
  }
  
  .career-area .sticky-navigation {
@@ -190,7 +193,7 @@
 
  /* skills */
  .skills-area {
-  background: url(../img/car.jpg) no-repeat;
+  background: url(../img/header1.jpg) no-repeat;
   background-size: cover;
   background-position: center bottom;
   background-color: rgba(0, 0, 0, 0.65);
@@ -228,11 +231,11 @@
     font-size: 100px !important;
     font-weight: 200;
   } */
+ }
 
 /* fees section */
-
 .fees-area {
-  background: url(../img/car.jpg) no-repeat;
+  background: url(../img/header3.jpg) no-repeat;
   background-size: cover;
   background-position: center bottom;
   background-color: rgba(0, 0, 0, 0.65);
@@ -266,7 +269,50 @@
   .fees-area {
     padding: 280px 0;
   }
-  /* .fees-area h1 {
+  /* .skills-area h1 {
     font-size: 100px !important;
     font-weight: 200;
   } */
+ }
+
+ /* Quote Area */
+ .quote-area {
+  background: url(../img/header3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  overflow: hidden;
+  padding: 90px 0;
+  max-height: 70vh;
+  background-blend-mode: overlay;
+ }
+ 
+ .quote-area .sticky-navigation {
+  background: transparent;
+ }
+ 
+ .quote-area .contents h1 {
+  font-size: 40px;
+  font-weight: 100;
+ }
+ 
+ .quote-area .contents p {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+ }
+ 
+ .quote-area .contents .btn {
+  margin: 15px;
+ }
+ 
+ @media (min-width: 1200px) {
+  .quote-area {
+    padding: 280px 0;
+  }
+  /* .quote-area h1 {
+    font-size: 100px !important;
+    font-weight: 200;
+  } */
+ }
