@@ -316,3 +316,16 @@
     font-weight: 200;
   } */
  }
+
+ /* Random styling */
+ .make-caps{
+   font-size: 20px;
+   font-weight: 300px;
+   color: red;
+ }
+
+ #make-background {
+   background-color: rgba(44, 44, 209, 0.65);
+   margin-left: 30vw;
+   padding: 5px;
+ }
