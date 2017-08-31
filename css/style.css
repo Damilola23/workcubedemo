@@ -203,6 +203,9 @@
   max-height: 70vh;
   background-blend-mode: overlay;
  }
+ .skills-text{
+  font-size: 19px;
+}
  
  .skills-area .sticky-navigation {
   background: transparent;
@@ -333,3 +336,54 @@
  .text-custom{
    color:white;
  }
+
+ /* offerings section */
+ .offering-area {
+  background: url(../img/header3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  overflow: hidden;
+  padding: 90px 0;
+  max-height: 70vh;
+  background-blend-mode: overlay;
+ }
+ 
+ .offering-area .sticky-navigation {
+  background: transparent;
+ }
+ 
+ .offering-area .contents h1 {
+  font-size: 40px;
+  font-weight: 100;
+ }
+ 
+ .offering-area .contents p {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+ }
+ 
+ .offering-area .contents .btn {
+  margin: 15px;
+ }
+ 
+ @media (min-width: 1200px) {
+  .offering-area {
+    padding: 280px 0;
+  }
+  /* .offering-area h1 {
+    font-size: 100px !important;
+    font-weight: 200;
+  } */
+ }
+
+.offering-font {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.offering-title, .skills-text {
+  font-weight: 400;
+}
+
