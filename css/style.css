@@ -419,3 +419,14 @@ section#Explanation {
 .sample-img{
   padding: 20px;
 }
+
+#trainer .col-sm-6.col-xs-6.mb-r {
+  width: 50% !important;
+  float: left !important;
+}
+@media (min-width: 992px){
+#trainer .col-sm-6.col-xs-6.mb-r {
+  width: 50% !important;
+  float: left !important;
+}
+}
