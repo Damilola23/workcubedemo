@@ -330,11 +330,48 @@ section#features{
    color: red;
  }
 
- #make-background {
-   background-color: rgba(44, 44, 209, 0.65);
-   margin-left: 40vw;
-   padding: 5px;
- }
+/*  caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+ } */
+ span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 8px;
+  /* font-size: 25px; */
+  /* letter-spacing: 10px; */
+  border-radius: 15px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../img/about-image.jpg");
+
+  /* Set a specific height */
+  min-height: 200px; 
+
+  /* Create the parallax scrolling effect */
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.65);
+  background-blend-mode: overlay;
+}
+
+.benefit-header{
+  color: white !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.benefit-desc{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px; 
+}
 
  .text-custom{
    color:white;
