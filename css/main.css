@@ -259,6 +259,8 @@ a:hover, a:focus {
   color: #fff;
   overflow: hidden;
   padding: 90px 0;
+  background-color: rgba(14, 45, 38, 0.63);
+  background-blend-mode: overlay;
 }
 
 .hero-area .sticky-navigation {
