@@ -1,136 +1,154 @@
-.carousel-inner .active.left { left: -33%; }
-.carousel-inner .next        { left:  33%; }
-.carousel-inner .prev        { left: -33%; }
-.carousel-control.left,.carousel-control.right {background-image:none;}
-.item:not(.prev) {visibility: visible;}
-.item.right:not(.prev) {visibility: hidden;}
-.rightest{ visibility: visible;}
+.carousel-inner .active.left {
+  left: -33%;
+}
+
+.carousel-inner .next {
+  left: 33%;
+}
+
+.carousel-inner .prev {
+  left: -33%;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+}
+
+.item:not(.prev) {
+  visibility: visible;
+}
+
+.item.right:not(.prev) {
+  visibility: hidden;
+}
+
+.rightest {
+  visibility: visible;
+}
+
 
 /* end of custom css */
 
-
 #why.section {
- padding: 0px !important;
+  padding: 0px !important;
 }
-section#features{
+
+section#features {
   padding: 0px !important;
 }
 
 #about-info.section {
- padding: 10px !important;
- background-color: rgb(63, 81, 181);
- color: black;
-}
-#benefits h1{
- color: white;
+  padding: 10px !important;
+  background-color: rgb(63, 81, 181);
+  color: black;
 }
 
-
-#counter.section{
- padding: 0px !important;
- background-color: white;
+#benefits h1 {
+  color: white;
 }
 
-.row.contents{
- margin-right: 10px;
+#counter.section {
+  padding: 0px !important;
+  background-color: white;
 }
-.navbar, .navbar.fees, .navbar.skills{
- box-shadow: none;
+
+.row.contents {
+  margin-right: 10px;
 }
+
+.navbar, .navbar.fees, .navbar.skills {
+  box-shadow: none;
+}
+
 
 /* About section */
 
 .about-area {
- background: url(../img/header2.jpg) no-repeat;
- background-size: cover;
- background-position: center bottom;
- background-color: rgba(21, 140, 226, 0.46);
- color: #fff;
- overflow: hidden;
- padding: 90px 0;
- max-height: 70vh;
- background-blend-mode: overlay;
-
+  background: url(../img/header2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-color: rgba(21, 140, 226, 0.46);
+  color: #fff;
+  overflow: hidden;
+  padding: 90px 0;
+  max-height: 70vh;
+  background-blend-mode: overlay;
 }
 
 .about-area .sticky-navigation {
- background: transparent;
+  background: transparent;
 }
 
 .about-area .contents h1 {
- font-size: 40px;
- font-weight: 100;
+  font-size: 40px;
+  font-weight: 100;
 }
 
 .about-area .contents p {
- font-size: 16px;
- font-weight: 400;
- text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .about-area .contents .btn {
- margin: 15px;
+  margin: 15px;
 }
 
 @media (min-width: 1200px) {
- .about-area {
-   padding: 280px 0;
- }
- /* .about-area h1 {
+  .about-area {
+    padding: 280px 0;
+  }
+  /* .about-area h1 {
    font-size: 100px !important;
    font-weight: 200;
  } */
- #about-title h1{
-   font-size: 200px !important;
-   font-weight: 100;
- }
+  #about-title h1 {
+    font-size: 200px !important;
+    font-weight: 100;
+  }
 }
 
-#about-title h1{
- font-size: 70px !important;
- font-weight: 100;
- color: white;
+#about-title h1 {
+  font-size: 70px !important;
+  font-weight: 100;
+  color: white;
 }
 
-
-.about p{
- font-size: 17px;
+.about p {
+  font-size: 17px;
 }
-
-
 
 .career-area {
   background: url(../img/car.jpg) no-repeat;
   background-size: cover;
   background-position: center bottom;
-  background-color:#00FFFF;
+  background-color: #00FFFF;
   color: #fff;
   overflow: hidden;
   padding: 90px 0;
   max-height: 70vh;
-  
- }
- 
- .career-area .sticky-navigation {
+}
+
+.career-area .sticky-navigation {
   background: transparent;
- }
- 
- .career-area .contents h1 {
+}
+
+.career-area .contents h1 {
   font-size: 40px;
   font-weight: 100;
- }
- 
- .career-area .contents p {
+}
+
+.career-area .contents p {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
- }
- 
- .career-area .contents .btn {
+}
+
+.career-area .contents .btn {
   margin: 15px;
- }
- 
- @media (min-width: 1200px) {
+}
+
+@media (min-width: 1200px) {
   .career-area {
     padding: 280px 0;
   }
@@ -138,25 +156,26 @@ section#features{
     font-size: 100px !important;
     font-weight: 200;
   } */
-  #about-title h1{
+  #about-title h1 {
     font-size: 200px !important;
     font-weight: 100;
   }
- }
- 
- #about-title h1{
+}
+
+#about-title h1 {
   font-size: 70px !important;
   font-weight: 100;
   color: white;
- }
- 
+}
 
- .rounded-circle{
-   border-radius: 50%;
- }
+.rounded-circle {
+  border-radius: 50%;
+}
+
 
 /* developer */
- .developer-area {
+
+.developer-area {
   background: url(../img/WorkCubeHeaderimage.jpg) no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -166,36 +185,37 @@ section#features{
   padding: 90px 0;
   max-height: 70vh;
   background-blend-mode: overlay;
- }
- 
- .developer-area .sticky-navigation {
+}
+
+.developer-area .sticky-navigation {
   background: transparent;
- }
- 
- .developer-area .contents h1 {
+}
+
+.developer-area .contents h1 {
   font-size: 40px;
   font-weight: 100;
- }
- 
- .developer-area .contents p {
+}
+
+.developer-area .contents p {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
- }
- 
- .developer-area .contents .btn {
+}
+
+.developer-area .contents .btn {
   margin: 15px;
- }
- 
- @media (min-width: 1200px) {
+}
+
+@media (min-width: 1200px) {
   .developer-area {
     padding: 280px 0;
   }
- }
+}
 
 
- /* skills */
- .skills-area {
+/* skills */
+
+.skills-area {
   background: url(../img/header1.jpg) no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -205,31 +225,32 @@ section#features{
   padding: 90px 0;
   max-height: 70vh;
   background-blend-mode: overlay;
- }
- .skills-text{
+}
+
+.skills-text {
   font-size: 19px;
 }
- 
- .skills-area .sticky-navigation {
+
+.skills-area .sticky-navigation {
   background: transparent;
- }
- 
- .skills-area .contents h1 {
+}
+
+.skills-area .contents h1 {
   font-size: 40px;
   font-weight: 100;
- }
- 
- .skills-area .contents p {
+}
+
+.skills-area .contents p {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
- }
- 
- .skills-area .contents .btn {
+}
+
+.skills-area .contents .btn {
   margin: 15px;
- }
- 
- @media (min-width: 1200px) {
+}
+
+@media (min-width: 1200px) {
   .skills-area {
     padding: 280px 0;
   }
@@ -237,9 +258,11 @@ section#features{
     font-size: 100px !important;
     font-weight: 200;
   } */
- }
+}
+
 
 /* fees section */
+
 .fees-area {
   background: url(../img/header3.jpg) no-repeat;
   background-size: cover;
@@ -250,28 +273,28 @@ section#features{
   padding: 90px 0;
   max-height: 70vh;
   background-blend-mode: overlay;
- }
- 
- .fees-area .sticky-navigation {
+}
+
+.fees-area .sticky-navigation {
   background: transparent;
- }
- 
- .fees-area .contents h1 {
+}
+
+.fees-area .contents h1 {
   font-size: 40px;
   font-weight: 100;
- }
- 
- .fees-area .contents p {
+}
+
+.fees-area .contents p {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
- }
- 
- .fees-area .contents .btn {
+}
+
+.fees-area .contents .btn {
   margin: 15px;
- }
- 
- @media (min-width: 1200px) {
+}
+
+@media (min-width: 1200px) {
   .fees-area {
     padding: 280px 0;
   }
@@ -279,10 +302,12 @@ section#features{
     font-size: 100px !important;
     font-weight: 200;
   } */
- }
+}
 
- /* Quote Area */
- .quote-area {
+
+/* Quote Area */
+
+.quote-area {
   background: url(../img/header3.jpg) no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -292,28 +317,28 @@ section#features{
   padding: 90px 0;
   max-height: 70vh;
   background-blend-mode: overlay;
- }
- 
- .quote-area .sticky-navigation {
+}
+
+.quote-area .sticky-navigation {
   background: transparent;
- }
- 
- .quote-area .contents h1 {
+}
+
+.quote-area .contents h1 {
   font-size: 40px;
   font-weight: 100;
- }
- 
- .quote-area .contents p {
+}
+
+.quote-area .contents p {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
- }
- 
- .quote-area .contents .btn {
+}
+
+.quote-area .contents .btn {
   margin: 15px;
- }
- 
- @media (min-width: 1200px) {
+}
+
+@media (min-width: 1200px) {
   .quote-area {
     padding: 280px 0;
   }
@@ -321,14 +346,17 @@ section#features{
     font-size: 100px !important;
     font-weight: 200;
   } */
- }
+}
 
- /* Random styling */
- .make-caps{
-   font-size: 20px;
-   font-weight: 300px;
-   color: red;
- }
+
+/* Random styling */
+
+.make-caps {
+  font-size: 20px;
+  font-weight: 300px;
+  color: red;
+}
+
 
 /*  caption {
   position: absolute;
@@ -338,7 +366,8 @@ section#features{
   text-align: center;
   color: #000;
  } */
- span.border {
+
+span.border {
   background-color: #111;
   color: #fff;
   padding: 8px;
@@ -350,12 +379,9 @@ section#features{
 .parallax {
   /* The image used */
   background-image: url("../img/about-image.jpg");
-
   /* Set a specific height */
-  min-height: 200px; 
-
+  min-height: 200px;
   /* Create the parallax scrolling effect */
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -364,21 +390,24 @@ section#features{
   background-blend-mode: overlay;
 }
 
-.benefit-header{
+.benefit-header {
   color: white !important;
   font-family: Arial, Helvetica, sans-serif;
 }
-.benefit-desc{
+
+.benefit-desc {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px; 
+  font-size: 14px;
 }
 
- .text-custom{
-   color:white;
- }
+.text-custom {
+  color: white;
+}
 
- /* offerings section */
- .offering-area {
+
+/* offerings section */
+
+.offering-area {
   background: url(../img/header3.jpg) no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -388,28 +417,28 @@ section#features{
   padding: 90px 0;
   max-height: 70vh;
   background-blend-mode: overlay;
- }
- 
- .offering-area .sticky-navigation {
+}
+
+.offering-area .sticky-navigation {
   background: transparent;
- }
- 
- .offering-area .contents h1 {
+}
+
+.offering-area .contents h1 {
   font-size: 40px;
   font-weight: 100;
- }
- 
- .offering-area .contents p {
+}
+
+.offering-area .contents p {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
- }
- 
- .offering-area .contents .btn {
+}
+
+.offering-area .contents .btn {
   margin: 15px;
- }
- 
- @media (min-width: 1200px) {
+}
+
+@media (min-width: 1200px) {
   .offering-area {
     padding: 280px 0;
   }
@@ -417,7 +446,7 @@ section#features{
     font-size: 100px !important;
     font-weight: 200;
   } */
- }
+}
 
 .offering-font {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -426,6 +455,7 @@ section#features{
 .offering-title, .skills-text {
   font-weight: 400;
 }
+
 #button2 {
   background-color: rgba(132, 178, 63, 0.65);
 }
@@ -437,23 +467,23 @@ table#table-cus td {
   width: 100vw;
 }
 
-#table-cus th{
+#table-cus th {
   font-size: 1.5rem !important;
   font-weight: 400 !important;
   padding: .75rem !important;
-  
 }
 
 section#Explanation {
-  padding:20px;
+  padding: 20px;
 }
+
 
 /* #Explanation {
   background-color: rgba(57, 57, 61, 0.89); 
   color: white;
 } */
 
-.sample-img{
+.sample-img {
   padding: 20px;
 }
 
@@ -461,9 +491,59 @@ section#Explanation {
   width: 50% !important;
   float: left !important;
 }
-@media (min-width: 992px){
-#trainer .col-sm-6.col-xs-6.mb-r {
-  width: 50% !important;
-  float: left !important;
+
+@media (min-width: 992px) {
+  #trainer .col-sm-6.col-xs-6.mb-r {
+    width: 50% !important;
+    float: left !important;
+  }
 }
+
+
+/* More incoming */
+
+.MultiCarousel {
+  float: left;
+  overflow: hidden;
+  padding: 15px;
+  width: 100%;
+  position: relative;
+}
+
+.MultiCarousel .MultiCarousel-inner {
+  transition: 1s ease all;
+  float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item {
+  float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item > div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  /* background: #f1f1f1; */
+  color: #666;
+}
+
+.MultiCarousel .leftLst, .MultiCarousel .rightLst {
+  position: absolute;
+  border-radius: 50%;
+  top: calc(20px);
+}
+
+
+
+.MultiCarousel .leftLst {
+  left: 0;
+}
+
+.MultiCarousel .rightLst {
+  right: 0;
+}
+
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over {
+  pointer-events: none;
+  background: #ccc;
 }
