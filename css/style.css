@@ -31,7 +31,7 @@
 
 #why.section {
   padding: 0px !important;
-  height: 400px;
+  height: 400px !important;
 }
 
 section#features {
@@ -612,3 +612,4 @@ li { list-style-type:none;}
 section#testimonial {
   height: 470px;
 }
+
