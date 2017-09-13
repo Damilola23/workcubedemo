@@ -86,23 +86,23 @@ $('#myCarousel').carousel({
   interval: 4000
 });
 
-$('.carousel .item.custom').each(function(){
-  var next = $(this).next();
-  if (!next.length) {
-    next = $(this).siblings(':first');
-  }
-  next.children(':first-child').clone().appendTo($(this));
+// $('.carousel .item.custom').each(function(){
+//   var next = $(this).next();
+//   if (!next.length) {
+//     next = $(this).siblings(':first');
+//   }
+//   next.children(':first-child').clone().appendTo($(this));
 
-  if (next.next().length>0) {
+//   if (next.next().length>0) {
  
-      next.next().children(':first-child').clone().appendTo($(this)).addClass('rightest');
+//       next.next().children(':first-child').clone().appendTo($(this)).addClass('rightest');
       
-  }
-  else {
-      $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+//   }
+//   else {
+//       $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
      
-  }
-});
+//   }
+// });
 
 
 // custom slider
