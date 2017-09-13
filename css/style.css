@@ -34,6 +34,15 @@
   height: 400px !important;
 }
 
+/* media query for partners setion  */
+
+@media (max-width: 479px) {
+  #why.section {
+    padding: 0px !important;
+    height: 300px !important;
+  }
+}
+
 section#features {
   padding: 0px !important;
 }
@@ -613,3 +622,18 @@ section#testimonial {
   height: 470px;
 }
 
+.partner {
+  color : black;
+}
+
+#main-features{
+  padding: 0px;
+}
+
+#main-features h2.partner {
+  padding: 30px 0 10px 0;
+  font-size: 50px;
+  line-height: 70px;
+  margin-top: 0px;
+  font-weight: 100;
+}

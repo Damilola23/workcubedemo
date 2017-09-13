@@ -484,7 +484,7 @@ a:hover, a:focus {
 }
 
 #why {
-  background: url(../img/why-bg.jpg);
+  background: white;
   background-size: cover;
   color: #fff;
 }
