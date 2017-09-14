@@ -22,6 +22,7 @@
     <link href="css/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/WorkCube-Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/custom.css">
     <!-- <link rel="stylesheet" href="css/mdb.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -80,7 +81,7 @@
                         <!-- End of header -->
 
                         <!-- first 6col div -->
-                        <div class="col-md-6">
+                        <div v-cloak class="col-md-6">
                             <form class="form-horizontal">
                                 <!-- First field set -->
                                 <fieldset id="hire">
@@ -127,8 +128,8 @@
                                             <div class="col-md-8">
                                                 <select name="mode-of-work" class="form-control" id="sel1" v-model="cloneableForm.hiringType" required>
                                                     <option></option>
-                                                    <option value="full">Part-Time (Remote/Physical)</option>
-                                                    <option value="part">Full-Time (Remote/Physical)</option>
+                                                    <option value="full">Full-Time (Remote/Physical)</option>
+                                                    <option value="part">Part-Time (Remote/Physical)</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -144,8 +145,8 @@
                                                     <option value="SD1" name="SD1" >Senior Developer 1</option>
                                                     <option value="SD2" name="SD2" >Senior Developer 2</option>
                                                     <option value="Arch" name="Arch" >Architect</option>
-                                                    <option value="PE" name="PE" >Principal Engineer</option>
-                                                    <option value=SE"" name="SE" >Senior Architect</option>
+                                                    <option value="PE" name="PE" >Principal Architect</option>
+                                                    <option value="SE" name="SE" >Senior Engineer</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -178,7 +179,7 @@
                                         <div class="form-group">
                                             <label class="col-md-4 control-label" for="textarea">Cost :</label>
                                             <div class="col-md-8">
-                                                <input name="cost" type="text" placeholder="Total Cost" class="form-control input-md" v-model="cloneableForm.cost" disabled>
+                                                <input name="cost" type="text" placeholder="Cost" class="form-control input-md" :value="'&#8358;' + cloneableForm.cost.toLocaleString()" disabled>
                                             </div>
 
                                         </div>
@@ -224,50 +225,50 @@
                                         <tr>
                                             <th scope="row">1</th>
                                             <td>Intern Engineer</td>
-                                            <td><span class="badge custom">#N50,000</span></td>
-                                            <td><span class="badge custom">#N500</span></td>
+                                            <td><span class="badge custom">&#8358;50,000</span></td>
+                                            <td><span class="badge custom">&#8358;500</span></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">2</th>
                                             <td>Engineer 1</td>
-                                            <td><span class="badge custom">#N70,000</span></td>
-                                            <td><span class="badge custom">#N1,000</span></td>
+                                            <td><span class="badge custom">&#8358;70,000</span></td>
+                                            <td><span class="badge custom">&#8358;1,000</span></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">3</th>
                                             <td>Engineer 2</td>
-                                            <td><span class="badge custom"> #100,000</span></td>
-                                            <td><span class="badge custom">#N1,800</span></td>
+                                            <td><span class="badge custom"> &#8358;100,000</span></td>
+                                            <td><span class="badge custom">&#8358;1,800</span></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">4</th>
                                             <td>Senior Developer 1</td>
-                                            <td><span class="badge custom">#130,000</span></td>
-                                            <td><span class="badge custom">#3,000</span></td>
+                                            <td><span class="badge custom">&#8358;130,000</span></td>
+                                            <td><span class="badge custom">&#8358;3,000</span></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">5</th>
                                             <td>Senior Developer 2</td>
-                                            <td><span class="badge custom"> #150,000</span></td>
-                                            <td><span class="badge custom">#N5,000</span></td>
+                                            <td><span class="badge custom"> &#8358;150,000</span></td>
+                                            <td><span class="badge custom">&#8358;5,000</span></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">6</th>
                                             <td>Architect</td>
-                                            <td><span class="badge custom"> #190,000</span></td>
-                                            <td><span class="badge custom">#N7,000</span></td>
+                                            <td><span class="badge custom"> &#8358;190,000</span></td>
+                                            <td><span class="badge custom">&#8358;7,000</span></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">7</th>
                                             <td>Principal Architect</td>
-                                            <td><span class="badge custom"> #220,000</span></td>
-                                            <td><span class="badge custom">#N14,000</span></td>
+                                            <td><span class="badge custom"> &#8358;220,000</span></td>
+                                            <td><span class="badge custom">&#8358;14,000</span></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">8</th>
                                             <td>Senior Engineer</td>
-                                            <td><span class="badge custom"> #250,000</span></td>
-                                            <td><span class="badge custom">#N20,000</span></td>
+                                            <td><span class="badge custom"> &#8358;250,000</span></td>
+                                            <td><span class="badge custom">&#8358;20,000</span></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -393,7 +394,41 @@
                         noOfTeamMembers: 0,
                         cost: 0
                     }
-                ]
+                ],
+                costs: {
+                    intern: {
+                        full: 50000,
+                        part: 500
+                    },
+                    eng1: {
+                        full: 70000,
+                        part: 1000
+                    },
+                    eng2: {
+                        full: 100000,
+                        part: 1800
+                    },
+                    sd1: {
+                        full: 130000,
+                        part: 3000
+                    },
+                    sd2: {
+                        full: 150000,
+                        part: 5000
+                    },
+                    arch: {
+                        full: 190000,
+                        part: 7000
+                    },
+                    pe: {
+                        full: 220000,
+                        part: 14000
+                    },
+                    se: {
+                        full: 250000,
+                        part: 20000
+                    }
+                }
             },
             methods: {
                 addCloneableForm: function() {
@@ -421,6 +456,27 @@
                         // This should never happen all things being equal
                         alert("You cannot remove the only grade level.");
                     }
+                },
+                calculateCost: function(cloneableForm) {
+                    var gradeLevel = cloneableForm.gradeLevel.toLowerCase();
+                    var hiringType = cloneableForm.hiringType.toLowerCase();
+                    var members = parseInt(cloneableForm.noOfTeamMembers, 10);
+                    var cost = 0;
+                    if (gradeLevel && hiringType && members) {
+                        var cost = parseInt(this.costs[gradeLevel][hiringType], 10) * members;
+                    }
+                    return cost;
+                }
+            },
+            watch: {
+                cloneableForms: {
+                    handler: function(vals, oldVals) {
+                        var self = this; // Because the scope of this will be lost inside the forEach loop
+                        vals.forEach(function(val, index) {
+                            self.cloneableForms[index].cost = self.calculateCost(val);
+                        });
+                    },
+                    deep: true
                 }
             }
         });
