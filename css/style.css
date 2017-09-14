@@ -637,3 +637,16 @@ section#testimonial {
   margin-top: 0px;
   font-weight: 100;
 }
+
+fieldset#hire {
+  padding: 40px;
+  border: 5px solid rgba(20, 20, 204, 0.56);
+}
+
+.badge.custom {
+  background-color: #4CAF50;
+}
+
+#table-cus.hire-table td{
+  font-weight:400!important;
+}
