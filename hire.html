@@ -113,17 +113,22 @@
 
 
 
-                                    <div id="cloneable" v-for="cloneableForm in cloneableFormCount">
+                                    <div v-for="(cloneableForm, index) in cloneableForms">
                                         <!-- Textarea -->
                                         <hr style="height:1px;border:none;color:#333;background-color:#333;" />
 
+                                        <div v-if="cloneableForms.length > 1" class="form-group">
+                                            <div class="col-md-offset-5 col-md-1">
+                                                <button type="button" class="btn btn-block btn-danger" @click="removeCloneableForm(index)">-</button>
+                                            </div>
+                                        </div>
                                         <div class="form-group">
                                             <label class="col-md-4 control-label" for="textarea">Custom Hiring Type :</label>
                                             <div class="col-md-8">
-                                                <select name="mode-of-work" class="form-control" id="sel1" required>
+                                                <select name="mode-of-work" class="form-control" id="sel1" v-model="cloneableForm.hiringType" required>
                                                     <option></option>
-                                                    <option name="full" >Part-Time (Remote/Physical)</option>
-                                                    <option name="part" >Full-Time (Remote/Physical)</option>
+                                                    <option value="full">Part-Time (Remote/Physical)</option>
+                                                    <option value="part">Full-Time (Remote/Physical)</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -131,7 +136,7 @@
                                         <div class="form-group">
                                             <label class="col-md-4 control-label" for="textarea">Grade Levels :</label>
                                             <div class="col-md-8">
-                                                <select name="skillset" class="form-control" id="sel1" required>
+                                                <select name="skillset" class="form-control" id="sel1" v-model="cloneableForm.gradeLevel" required>
                                                     <option></option>
                                                     <option value="intern" name="Intern" >Intern Engineer</option>
                                                     <option value="ENG1" name="ENG1" >Engineer 1</option>
@@ -148,7 +153,7 @@
                                         <div class="form-group">
                                             <label class="col-md-4 control-label" for="textarea">Skills :</label>
                                             <div class="col-md-8">
-                                                <select id="Skill-needed" name="Skill Needed" class="form-control md-form form-control-static" placeholder="Select a SKill" required="">
+                                                <select id="Skill-needed" name="Skill Needed" class="form-control md-form form-control-static" v-model="cloneableForm.skill" placeholder="Select a SKill" required="">
                                                     <option value=""></option>
                                                     <option value="frontEnd-Developer">frontEnd-Developer</option>
                                                     <option value="backEnd-Developer">backEnd-Developer</option>
@@ -166,14 +171,14 @@
                                         <div class="form-group">
                                             <label class="col-md-4 control-label" for="textarea">Number of Team Members :</label>
                                             <div class="col-md-8">
-                                                <input name="numberOfTeam" type="number" placeholder="Number of Team Members" class="form-control input-md" min="0" max="6" value="0">
+                                                <input name="numberOfTeam" type="number" placeholder="Number of Team Members" class="form-control input-md" min="0" max="6" v-model="cloneableForm.noOfTeamMembers">
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <label class="col-md-4 control-label" for="textarea">Cost :</label>
                                             <div class="col-md-8">
-                                                <input name="cost" type="text" placeholder="Total Cost" class="form-control input-md" value="0" disabled>
+                                                <input name="cost" type="text" placeholder="Total Cost" class="form-control input-md" v-model="cloneableForm.cost" disabled>
                                             </div>
 
                                         </div>
@@ -182,10 +187,10 @@
                                 <!-- End of Second FieldSet -->
 
                                 <div style="padding : 20px;"></div>
-                                <div class="form-group">
+                                <div class="form-group" v-if="cloneableForms.length < 8">
                                     <label class="col-md-4 control-label" for="singlebutton">Add New Grade Level</label>
                                     <div class="col-md-8">
-                                        <button id="newButton" name="addNew" class="btn btn-block btn-primary" @click="incrementCloneableFormCount()">+</button>
+                                        <button type="button" class="btn btn-block btn-primary" @click="addCloneableForm()">+</button>
                                     </div>
                                 </div>
 
@@ -380,11 +385,42 @@
         var app = new Vue({
             el: '#app',
             data: {
-                cloneableFormCount: 1
+                cloneableForms: [
+                    {
+                        hiringType: '',
+                        gradeLevel: '',
+                        skill: '',
+                        noOfTeamMembers: 0,
+                        cost: 0
+                    }
+                ]
             },
             methods: {
-                incrementCloneableFormCount: function() {
-                    this.cloneableFormCount++;
+                addCloneableForm: function() {
+                    if (this.cloneableForms.length < 8) {
+                        this.cloneableForms.push(
+                            {
+                                hiringType: '',
+                                gradeLevel: '',
+                                skill: '',
+                                noOfTeamMembers: 0,
+                                cost: 0
+                            }
+                        );
+                    }
+                    else {
+                        // This should never happen all things being equal
+                        alert("You have reached the maximum number of grade levels you can add.");
+                    }
+                },
+                removeCloneableForm: function(index) {
+                    if (this.cloneableForms.length > 1) {
+                        this.cloneableForms.splice(index, 1);
+                    }
+                    else {
+                        // This should never happen all things being equal
+                        alert("You cannot remove the only grade level.");
+                    }
                 }
             }
         });
