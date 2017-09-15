@@ -50,12 +50,12 @@
             <div class="container">
               <div class="navbar-header">
                 <a class="logo-left " href="index.html"><img src="img/WorkCube-Logo.png" width="30" height="30" style="margin-right:5px;padding-bottom: 3px;">WorkCube</a>
-              </div> 
+              </div>
               <div class="navbar-right">
                 <button class="menu-icon" id="open-button">
                     <i class="mdi-navigation-menu"></i>
                   </button>
-                </div>             
+                </div>
             </div>
           </div>
 
@@ -78,19 +78,19 @@
                   <p class="text-center">Find Africa's brightest talents ready for their next opportunity to jump on something cool and help you scale faster!</p>
 
                   <br>
-      
-                  <form class="form-horizontal">
+
+                  <form class="form-horizontal" action="./php/process-quoteform.php" method="post">
                     <fieldset>
-      
+
                       <!-- Form Name -->
                       <legend></legend>
-      
+
                       <!-- Text input-->
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="textinput">Name:</label>
                         <div class="col-md-8">
-                          <input id="name" name="Full-name" type="text" placeholder="Please enter your Full Name" class="form-control input-md" required="">
-      
+                          <input id="name" name="full-name" type="text" placeholder="Please enter your Full Name" class="form-control input-md" required="">
+
                         </div>
                       </div>
 
@@ -99,19 +99,19 @@
                           <label class="col-md-4 control-label" for="textinput">Phone Number:</label>
                           <div class="col-md-8">
                             <input id="phone-number" name="phone-number" type="tel" placeholder="Please enter your Phone Number" class="form-control input-md" required="">
-        
+
                           </div>
                         </div>
-      
+
                       <!-- Text input-->
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="textinput">E-mail: </label>
                         <div class="col-md-8">
                           <input id="email" name="email" type="email" placeholder="Please enter your e-mail" class="form-control input-md" required="">
-      
+
                         </div>
                       </div>
-      
+
                       <!-- Textarea -->
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="textarea">Tell Us Briefly about your needs:</label>
@@ -134,11 +134,11 @@
                                   <option value="SD2" name="SD2" >Senior Developer 2</option>
                                   <option value="Arch" name="Arch" >Architect</option>
                                   <option value="PE" name="PE" >Principal Engineer</option>
-                                  <option value=SE"" name="SE" >Senior Architect</option>
+                                  <option value="SE" name="SE" >Senior Architect</option>
                                   <option name="others" value="others">Others</option>
                                 </select>
-                            </div> 
-                          
+                            </div>
+
                         </div>
 
 
@@ -146,15 +146,14 @@
                       <div class="form-group">
                           <label class="col-md-4 control-label" for="textarea">What Kind of Talent are you looking For? :</label>
                           <div class="col-md-8">
-                            <select id="talents" name="Talents" class="form-control md-form form-control-static" placeholder="Select a SKill" required="">
-                              <option value=""></option>
+                            <select id="talents" name="talent" class="form-control md-form form-control-static" placeholder="Select a SKill" required="">
                               <option value=""></option>
                               <option value="frontEnd-Developer">frontEnd-Developer</option>
                               <option value="backEnd-Developer">backEnd-Developer</option>
                               <option value="Dev-Ops">Dev-Ops</option>
                               <option value="Android-Developer">Android-Developer</option>
                               <option value="Network-Admin(windows)">Network-Admin(windows)</option>
-                              <option value="Network-Admin(linux)">Network-Admin(linux)</option>    
+                              <option value="Network-Admin(linux)">Network-Admin(linux)</option>
                               <option value="System-admin(W)">System-Admin(Windows)</option>
                               <option value="System-admin(linux)">System-Admin(linux)</option>
                               <option value="Test/qa-Engineer">Test/Qa Engineer</option>
@@ -164,10 +163,10 @@
                               <option value="Product-Manager">Product Manager</option>
                               <option value="Database-Admin">Database Admin</option>
                               <option value="Data-Scientist">Data-Scientist</option>
-                              <option value="IT/Tech-Support-Staff">IT/Tech Support Staff</option>                             
+                              <option value="IT/Tech-Support-Staff">IT/Tech Support Staff</option>
                             </select>
-                            </div> 
-                          
+                            </div>
+
                         </div>
 
                          <!-- Textarea -->
@@ -176,24 +175,24 @@
                           <div class="col-md-8">
                               <select name="mode-of-work" class="form-control" id="sel1" required>
                                 <option></option>
-                                  <option name="full" >Part-Time (Remote/Physical)</option>
-                                  <option name="part" >Full-Time (Remote/Physical)</option>
+                                  <option value="full">Part-Time (Remote/Physical)</option>
+                                  <option value="part">Full-Time (Remote/Physical)</option>
                                 </select>
-                            </div> 
+                            </div>
                         </div>
 
                       <!-- Button -->
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="singlebutton"></label>
                         <div class="col-md-8">
-                          <button id="singlebutton" name="singlebutton" class="btn btn-primary">Hire</button>
+                          <button id="singlebutton" name="submit" class="btn btn-primary">Hire</button>
                         </div>
                       </div>
-      
+
                     </fieldset>
                   </form>
-      
-      
+
+
                 </div>
           </div>
         </div>
@@ -201,7 +200,7 @@
     </section>
 
     <!-- footer Section -->
-  
+
     <section id="footer">
       <div class="container">
         <div class="container">
@@ -254,7 +253,7 @@
         </div>
       </div>
       <!-- Go to Top Link -->
-      
+
     </section>
 
     <section id="copyright">
