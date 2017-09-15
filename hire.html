@@ -82,7 +82,7 @@
 
                         <!-- first 6col div -->
                         <div v-cloak class="col-md-6">
-                            <form class="form-horizontal">
+                            <form class="form-horizontal" action="http://phpapps.dev/iqube/php/process-hire.php" method="post">
                                 <!-- First field set -->
                                 <fieldset id="hire">
                                     <!-- Form Name -->
@@ -126,7 +126,7 @@
                                         <div class="form-group">
                                             <label class="col-md-4 control-label" for="textarea">Custom Hiring Type :</label>
                                             <div class="col-md-8">
-                                                <select name="mode-of-work" class="form-control" id="sel1" v-model="cloneableForm.hiringType" required>
+                                                <select :name="'mode-of-work-' + (index)" class="form-control" id="sel1" v-model="cloneableForm.hiringType" required>
                                                     <option></option>
                                                     <option value="full">Full-Time (Remote/Physical)</option>
                                                     <option value="part">Part-Time (Remote/Physical)</option>
@@ -137,7 +137,7 @@
                                         <div class="form-group">
                                             <label class="col-md-4 control-label" for="textarea">Grade Levels :</label>
                                             <div class="col-md-8">
-                                                <select name="Grade-level" class="form-control" id="sel1" v-model="cloneableForm.gradeLevel" required>
+                                                <select :name="'grade-level-' + (index)" class="form-control" id="sel1" v-model="cloneableForm.gradeLevel" required>
                                                     <option></option>
                                                     <option value="intern" name="Intern" >Intern Engineer</option>
                                                     <option value="ENG1" name="ENG1" >Engineer 1</option>
@@ -154,14 +154,14 @@
                                         <div class="form-group">
                                             <label class="col-md-4 control-label" for="textarea">Skills :</label>
                                             <div class="col-md-8">
-                                                <select id="Skill-needed" name="Skill Needed" class="form-control md-form form-control-static" v-model="cloneableForm.skill" placeholder="Select a SKill" required="">
+                                                <select id="Skill-needed" :name="'skill-level-' + (index)" class="form-control md-form form-control-static" v-model="cloneableForm.skill" placeholder="Select a SKill" required="">
                                                     <option value=""></option>
                                                     <option value="frontEnd-Developer">frontEnd-Developer</option>
                                                     <option value="backEnd-Developer">backEnd-Developer</option>
                                                     <option value="Dev-Ops">Dev-Ops</option>
                                                     <option value="Android-Developer">Android-Developer</option>
                                                     <option value="Network-Admin(windows)">Network-Admin(windows)</option>
-                                                    <option value="Network-Admin(linux)">Network-Admin(linux)</option>    
+                                                    <option value="Network-Admin(linux)">Network-Admin(linux)</option>
                                                     <option value="System-admin(W)">System-Admin(Windows)</option>
                                                     <option value="System-admin(linux)">System-Admin(linux)</option>
                                                     <option value="Test/qa-Engineer">Test/Qa Engineer</option>
@@ -179,7 +179,7 @@
                                         <div class="form-group">
                                             <label class="col-md-4 control-label" for="textarea">Number of Team Members :</label>
                                             <div class="col-md-8">
-                                                <input name="numberOfTeam" type="number" placeholder="Number of Team Members" class="form-control input-md" min="0" max="6" v-model="cloneableForm.noOfTeamMembers">
+                                                <input :name="'number-of-team-' + (index)" type="number" placeholder="Number of Team Members" class="form-control input-md" min="1" max="6" v-model="cloneableForm.noOfTeamMembers">
                                             </div>
                                         </div>
 
@@ -194,8 +194,26 @@
                                 </fieldset>
                                 <!-- End of Second FieldSet -->
 
+                                <table id="table-custom" class="table table-hover table-responsive table-striped table-bordered" style="margin-top: 10px;">
+                                    <thead>
+                                        <tr>
+                                            <th>Total Full Time Cost <span class="badge red">(Service cost)</span></th>
+                                            <th>Total Part Time Cost <span class="badge red">(Cost/hr)</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th v-text="'&#8358;' + totalCost.full.toLocaleString()"></th>
+                                            <th v-text="'&#8358;' + totalCost.part.toLocaleString()"></th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
                                 <div style="padding : 20px;"></div>
+
+
                                 <div class="form-group" v-if="cloneableForms.length < 8">
+                                    <input type="hidden" name="grade-level-count" :value="cloneableForms.length">
                                     <label class="col-md-4 control-label" for="singlebutton">Add New Grade Level</label>
                                     <div class="col-md-8">
                                         <button type="button" class="btn btn-block btn-primary" @click="addCloneableForm()">+</button>
@@ -435,6 +453,10 @@
                         full: 250000,
                         part: 20000
                     }
+                },
+                totalCost: {
+                    part: 0,
+                    full: 0
                 }
             },
             methods: {
@@ -482,6 +504,16 @@
                         vals.forEach(function(val, index) {
                             self.cloneableForms[index].cost = self.calculateCost(val);
                         });
+                        var partTimeCost = this.cloneableForms.filter(function(val) { return val.hiringType.toLowerCase() === 'part'; })
+                                                            .map(function(val) { return val.cost; })
+                                                            .reduce(function(oldVal, newVal) { return oldVal + newVal; }, 0);
+                        var fullTimeCost = this.cloneableForms.filter(function(val) { return val.hiringType.toLowerCase() == 'full'; })
+                                                            .map(function(val) { return val.cost; })
+                                                            .reduce(function(oldVal, newVal) { return oldVal + newVal; }, 0);
+                        this.totalCost = {
+                            part: partTimeCost,
+                            full: fullTimeCost
+                        };
                     },
                     deep: true
                 }
