@@ -497,8 +497,8 @@
                             self.cloneableForms[index].cost = self.calculateCost(val);
                         });
                         var partTimeCost = this.cloneableForms.filter(function(val) { return val.hiringType.toLowerCase() === 'part'; })
-                                                            .map(function(val) { console.log(val); return val.cost; })
-                                                            // .reduce(function(oldVal, newVal) { return oldVal + newVal });
+                                                            .map(function(val) { return val.cost; })
+                                                            .reduce(function(oldVal, newVal) { return oldVal + newVal; });
                         // var fullTimeCost = this.cloneableForms.filter(function(val) { return val.hiringType.toLowerCase() == 'full'; })
                         //                                     .map(function(val) { return val.cost; })
                         //                                     .reduce(function(oldVal, newVal) { return oldVal + newVal });
@@ -506,6 +506,8 @@
                         //     part: partTimeCost,
                         //     full: fullTimeCost
                         // };
+
+                        console.log(partTimeCost);
                     },
                     deep: true
                 }
