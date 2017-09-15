@@ -14,7 +14,7 @@ class Database{
     private $stmt;
 
     public function __construct() {
-        $dsn = $this->dbType . ':host=' . $this->host . ';port=' .$port . ';dbname=' . $this->dbName;
+        $dsn = $this->dbType . ':host=' . $this->host . ';port=' . $this->port . ';dbname=' . $this->dbName;
         $options = array(
             PDO::ATTR_PERSISTENT => true,
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION

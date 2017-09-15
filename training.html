@@ -76,19 +76,19 @@
         <div class="row">
               <div class="col-md-12 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
                   <h2 class="section-title text-center">Love to Hear From You</h2>
-      
-                  <form class="form-horizontal">
+
+                  <form class="form-horizontal" action="./php/process-training.php" method="post">
                     <fieldset>
-      
+
                       <!-- Form Name -->
                       <legend></legend>
-      
+
                       <!-- Text input-->
                       <div class="form-group">
-                        <label class="col-md-4 control-label" for="textinput">Comany Name:</label>
+                        <label class="col-md-4 control-label" for="textinput">Company Name:</label>
                         <div class="col-md-8">
-                          <input id="company-name" name="Company-name" type="text" placeholder="Please enter your Company's Name" class="form-control input-md" required="">
-      
+                          <input id="company-name" name="company-name" type="text" placeholder="Please enter your Company's Name" class="form-control input-md" required="">
+
                         </div>
                       </div>
 
@@ -96,8 +96,8 @@
                       <div class="form-group">
                           <label class="col-md-4 control-label" for="textinput">Contact Name:</label>
                           <div class="col-md-8">
-                            <input id="textinput" name="phone-number" type="text" placeholder="Please enter your Name" class="form-control input-md" required="">
-        
+                            <input id="textinput" name="contact-name" type="text" placeholder="Please enter your Name" class="form-control input-md" required="">
+
                           </div>
                         </div>
 
@@ -106,19 +106,19 @@
                           <label class="col-md-4 control-label" for="textinput">Phone Number:</label>
                           <div class="col-md-8">
                             <input id="phone" name="phone-number" type="tel" placeholder="Please enter your Phone Number" class="form-control input-md" required="">
-        
+
                           </div>
                         </div>
-      
+
                       <!-- Text input-->
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="textinput">Company E-mail: </label>
                         <div class="col-md-8">
                           <input id="company-email" name="company-email" type="email" placeholder="Please enter your Company e-mail" class="form-control input-md" required="">
-      
+
                         </div>
                       </div>
-      
+
                       <!-- Textarea -->
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="textarea">Tell Us Briefly about Yourself:</label>
@@ -392,7 +392,7 @@
                           </div>
                         </div>
 
-                        
+
                            <!-- Textarea -->
                       <div class="form-group">
                           <label class="col-md-4 control-label" for="textarea">How will you rate the priority level for your training
@@ -409,10 +409,10 @@
                                 </label>
                                 <label class="radio-inline">
                                     <input name="priority" value="inquiring" type="radio" name="inquring">inquiring
-                                  </label>
+                                </label>
                           </div>
                         </div>
-      
+
                       <!-- Button -->
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="submit"></label>
@@ -420,11 +420,11 @@
                           <button id="singlebutton" name="submit" class="btn btn-primary">Submit</button>
                         </div>
                       </div>
-      
+
                     </fieldset>
                   </form>
-      
-      
+
+
                 </div>
           </div>
         </div>
@@ -432,7 +432,7 @@
     </section>
 
     <!-- footer Section -->
-  
+
     <section id="footer">
       <div class="container">
         <div class="container">
@@ -485,7 +485,7 @@
         </div>
       </div>
       <!-- Go to Top Link -->
-      
+
     </section>
 
     <section id="copyright">
