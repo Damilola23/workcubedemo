@@ -87,7 +87,7 @@
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="textinput">Comany Name:</label>
                         <div class="col-md-8">
-                          <input id="textinput" name="Full-name" type="text" placeholder="Please enter your Company's Name" class="form-control input-md" required="">
+                          <input id="company-name" name="Company-name" type="text" placeholder="Please enter your Company's Name" class="form-control input-md" required="">
       
                         </div>
                       </div>
@@ -105,7 +105,7 @@
                       <div class="form-group">
                           <label class="col-md-4 control-label" for="textinput">Phone Number:</label>
                           <div class="col-md-8">
-                            <input id="textinput" name="phone-number" type="tel" placeholder="Please enter your Phone Number" class="form-control input-md" required="">
+                            <input id="phone" name="phone-number" type="tel" placeholder="Please enter your Phone Number" class="form-control input-md" required="">
         
                           </div>
                         </div>
@@ -114,7 +114,7 @@
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="textinput">Company E-mail: </label>
                         <div class="col-md-8">
-                          <input id="textinput" name="email" type="email" placeholder="Please enter your Compnay e-mail" class="form-control input-md" required="">
+                          <input id="company-email" name="company-email" type="email" placeholder="Please enter your Company e-mail" class="form-control input-md" required="">
       
                         </div>
                       </div>
@@ -123,7 +123,7 @@
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="textarea">Tell Us Briefly about Yourself:</label>
                         <div class="col-md-8">
-                          <textarea class="form-control" id="textarea" name="textarea" placeholder="Tell Us Briefly about Yourself"></textarea>
+                          <textarea class="form-control" id="describe-yourself" name="describe-yourself" placeholder="Tell Us Briefly about Yourself"></textarea>
                         </div>
                       </div>
 
@@ -131,7 +131,7 @@
                       <div class="form-group">
                           <label class="col-md-4 control-label" for="textarea">Select your Country</label>
                           <div class="col-md-8">
-                              <select class="form-control">
+                              <select name="country" class="form-control">
                                   <option value="AF">Afghanistan</option>
                                   <option value="AX">Åland Islands</option>
                                   <option value="AL">Albania</option>
@@ -388,7 +388,7 @@
                        <div class="form-group">
                           <label class="col-md-4 control-label" for="textarea">Tell us about your training needs :</label>
                           <div class="col-md-8">
-                            <textarea class="form-control" id="textarea" name="needs" placeholder="What are your Aquired Skills" rows="4" cols="50"></textarea>
+                            <textarea class="form-control" id="textarea" name="training-needs" placeholder="What are your Aquired Skills" rows="4" cols="50"></textarea>
                           </div>
                         </div>
 
@@ -399,25 +399,25 @@
                               :</label>
                           <div class="col-md-8">
                               <label class="radio-inline">
-                                  <input type="radio" name="high">High
+                                  <input name="priority" value="high" type="radio" name="high">High
                                 </label>
                                 <label class="radio-inline">
-                                  <input type="radio" name="average">Average
+                                  <input name="priority" value="average" type="radio" name="average">Average
                                 </label>
                                 <label class="radio-inline">
-                                  <input type="radio" name="low">Low
+                                  <input name="priority" value="low" type="radio" name="low">Low
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="inquring">inquiring
+                                    <input name="priority" value="inquiring" type="radio" name="inquring">inquiring
                                   </label>
                           </div>
                         </div>
       
                       <!-- Button -->
                       <div class="form-group">
-                        <label class="col-md-4 control-label" for="singlebutton"></label>
+                        <label class="col-md-4 control-label" for="submit"></label>
                         <div class="col-md-8">
-                          <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
+                          <button id="singlebutton" name="submit" class="btn btn-primary">Submit</button>
                         </div>
                       </div>
       
