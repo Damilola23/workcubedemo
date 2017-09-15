@@ -29,9 +29,8 @@ if (isset($_POST['submit'])) {
         $database->bind(':mode_of_work', $modeOfWork);
 
         $database->execute();
-
         $database->endTransaction();
-        
+
         $message = 'Thank you, your request has been saved and will be processed shorly. We will get back to you soon.';
     }
     catch (Exception $e) {
@@ -40,4 +39,4 @@ if (isset($_POST['submit'])) {
     }
 }
 
-die($message);
+?>
