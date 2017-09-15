@@ -79,7 +79,7 @@
 
                   <br>
 
-                  <form class="form-horizontal">
+                  <form class="form-horizontal" action="./php/process-quoteform.php" method="post">
                     <fieldset>
 
                       <!-- Form Name -->
@@ -146,8 +146,7 @@
                       <div class="form-group">
                           <label class="col-md-4 control-label" for="textarea">What Kind of Talent are you looking For? :</label>
                           <div class="col-md-8">
-                            <select id="talents" name="talents" class="form-control md-form form-control-static" placeholder="Select a SKill" required="">
-                              <option value=""></option>
+                            <select id="talents" name="talent" class="form-control md-form form-control-static" placeholder="Select a SKill" required="">
                               <option value=""></option>
                               <option value="frontEnd-Developer">frontEnd-Developer</option>
                               <option value="backEnd-Developer">backEnd-Developer</option>
@@ -176,8 +175,8 @@
                           <div class="col-md-8">
                               <select name="mode-of-work" class="form-control" id="sel1" required>
                                 <option></option>
-                                  <option name="full" >Part-Time (Remote/Physical)</option>
-                                  <option name="part" >Full-Time (Remote/Physical)</option>
+                                  <option value="full">Part-Time (Remote/Physical)</option>
+                                  <option value="part">Full-Time (Remote/Physical)</option>
                                 </select>
                             </div>
                         </div>
@@ -186,7 +185,7 @@
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="singlebutton"></label>
                         <div class="col-md-8">
-                          <button id="singlebutton" name="singlebutton" class="btn btn-primary">Hire</button>
+                          <button id="singlebutton" name="submit" class="btn btn-primary">Hire</button>
                         </div>
                       </div>
 
