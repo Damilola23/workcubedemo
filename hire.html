@@ -161,7 +161,7 @@
                                                     <option value="Dev-Ops">Dev-Ops</option>
                                                     <option value="Android-Developer">Android-Developer</option>
                                                     <option value="Network-Admin(windows)">Network-Admin(windows)</option>
-                                                    <option value="Network-Admin(linux)">Network-Admin(linux)</option>    
+                                                    <option value="Network-Admin(linux)">Network-Admin(linux)</option>
                                                     <option value="System-admin(W)">System-Admin(Windows)</option>
                                                     <option value="System-admin(linux)">System-Admin(linux)</option>
                                                     <option value="Test/qa-Engineer">Test/Qa Engineer</option>
@@ -198,7 +198,7 @@
                                     <thead>
                                         <tr>
                                             <th>Total Full Time Cost</th>
-                                            <th>Total Part Time Cost</th>
+                                            <th>Total Part Time Cost <span class="badge red">(Cost/hr)</span></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -505,16 +505,14 @@
                         });
                         var partTimeCost = this.cloneableForms.filter(function(val) { return val.hiringType.toLowerCase() === 'part'; })
                                                             .map(function(val) { return val.cost; })
-                                                            .reduce(function(oldVal, newVal) { return oldVal + newVal; });
-                        // var fullTimeCost = this.cloneableForms.filter(function(val) { return val.hiringType.toLowerCase() == 'full'; })
-                        //                                     .map(function(val) { return val.cost; })
-                        //                                     .reduce(function(oldVal, newVal) { return oldVal + newVal });
-                        // this.totalCost = {
-                        //     part: partTimeCost,
-                        //     full: fullTimeCost
-                        // };
-
-                        console.log(partTimeCost);
+                                                            .reduce(function(oldVal, newVal) { return oldVal + newVal; }, 0);
+                        var fullTimeCost = this.cloneableForms.filter(function(val) { return val.hiringType.toLowerCase() == 'full'; })
+                                                            .map(function(val) { return val.cost; })
+                                                            .reduce(function(oldVal, newVal) { return oldVal + newVal; }, 0);
+                        this.totalCost = {
+                            part: partTimeCost,
+                            full: fullTimeCost
+                        };
                     },
                     deep: true
                 }
