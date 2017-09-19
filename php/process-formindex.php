@@ -163,9 +163,7 @@ if (isset($_POST['submit'])) {
                 <li><a href="../about.html">About Us</a>
                 </li>
                 <li><a href="../developer.html">Featured developers</a>
-                </li>
-                <li><a href="#contact">Contact</a>
-                </li>
+                </li>               
                 <li><a href="../career.html">Careers</a>
                 </li>
               </ul>

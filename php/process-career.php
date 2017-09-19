@@ -80,8 +80,10 @@ if (isset($_POST['submit'])) {
     </div>
     <ul class="nav navbar-nav main-navigation">
       <li><a href="../index.html">Home</a></li>
-      <li><a href="../developer.html">Featured Devs</a></li>
-      <li><a href="../career.html">Careers</a></li>
+      <li><a href="../skills.html">Skills</a></li>
+      <li><a href="../fees.html">Fees</a></li>      
+      <li><a href="../developer.html">Featured Developers</a></li>
+      <li><a href="../career.html">Career</a></li>
     </ul>
     <button class="close-button" id="close-button">Close Menu</button>
   </div>
@@ -170,9 +172,7 @@ if (isset($_POST['submit'])) {
                 <li><a href="../about.html">About Us</a>
                 </li>
                 <li><a href="../developer.html">Featured developers</a>
-                </li>
-                <li><a href="#contact">Contact</a>
-                </li>
+                </li>                
                 <li><a href="../career.html">Careers</a>
                 </li>
               </ul>
