@@ -518,7 +518,7 @@
         <div class="col-md-6 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
           <h2 class="section-title">Love to Hear From You</h2>
 
-          <form class="form-horizontal">
+          <form class="form-horizontal" action="./php/process-formindex.php" method="post">
             <fieldset>
 
               <!-- Form Name -->
@@ -528,7 +528,7 @@
               <div class="form-group">
                 <label class="col-md-4 control-label" for="textinput">Name</label>
                 <div class="col-md-8">
-                  <input id="textinput" name="textinput" type="text" placeholder="Please enter your name" class="form-control input-md" required="">
+                  <input id="name" name="user-name" type="text" placeholder="Please enter your name" class="form-control input-md" required="">
 
                 </div>
               </div>
@@ -537,7 +537,7 @@
               <div class="form-group">
                 <label class="col-md-4 control-label" for="textinput">E-mail</label>
                 <div class="col-md-8">
-                  <input id="textinput" name="textinput" type="text" placeholder="Please enter your e-mail" class="form-control input-md" required="">
+                  <input id="user-email" name="user-email" type="email" placeholder="Please enter your e-mail" class="form-control input-md" required="">
 
                 </div>
               </div>
@@ -546,7 +546,7 @@
               <div class="form-group">
                 <label class="col-md-4 control-label" for="textarea">How can we help?</label>
                 <div class="col-md-8">
-                  <textarea class="form-control" id="textarea" name="textarea"></textarea>
+                  <textarea class="form-control" id="textarea" name="contact-need"></textarea>
                 </div>
               </div>
 
@@ -554,7 +554,7 @@
               <div class="form-group">
                 <label class="col-md-4 control-label" for="singlebutton"></label>
                 <div class="col-md-8">
-                  <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
+                  <button id="singlebutton" name="submit" class="btn btn-primary">Submit</button>
                 </div>
               </div>
 
