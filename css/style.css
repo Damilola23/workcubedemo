@@ -402,11 +402,11 @@ span.border {
 
 .benefit-header {
   color: white !important;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .benefit-desc {
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   font-size: 14px;
 }
 
@@ -459,7 +459,7 @@ span.border {
 }
 
 .offering-font {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 .offering-title, .skills-text {
@@ -667,4 +667,9 @@ h2.customHead {
   padding-top: 0px;
   margin-top: 0px;
   font-size: 34px;
+}
+
+#makeblue {
+  color : white;
+  background-color: #3f51b5;
 }
