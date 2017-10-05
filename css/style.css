@@ -388,7 +388,7 @@ span.border {
 
 .parallax {
   /* The image used */
-  background-image: url("../img/about-image.jpg");
+  background-image: url("../img/Slider 3.jpg");
   /* Set a specific height */
   min-height: 200px;
   /* Create the parallax scrolling effect */
@@ -407,6 +407,7 @@ span.border {
 
 .benefit-desc {
   /* font-family: Arial, Helvetica, sans-serif; */
+  font-weight: 500 !important;
   font-size: 14px;
 }
 
@@ -456,10 +457,6 @@ span.border {
     font-size: 100px !important;
     font-weight: 200;
   } */
-}
-
-.offering-font {
-  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 .offering-title, .skills-text {
