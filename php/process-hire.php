@@ -12,36 +12,36 @@ if (isset($_POST['submit'])) {
 
     $costs = array(
         'intern' => array(
-            'full' => 50000,
-            'part' => 500
+            'full' => 500,
+            'part' => 20
         ),
         'eng1' => array(
-            'full' => 70000,
-            'part' => 1000
+            'full' => 750,
+            'part' => 30
         ),
-        'eng2' => array(
-            'full' => 100000,
-            'part' => 1800
-        ),
+        // 'eng2' => array(
+        //     'full' => 100000,
+        //     'part' => 1800
+        // ),
         'sd1' => array(
-            'full' => 130000,
-            'part' => 3000
+            'full' => 1000,
+            'part' => 40
         ),
-        'sd2' => array(
-            'full' => 150000,
-            'part' => 5000
-        ),
+        // 'sd2' => array(
+        //     'full' => 150000,
+        //     'part' => 5000
+        // ),
         'arch' => array(
-            'full' => 190000,
-            'part' => 7000
+            'full' => 1500,
+            'part' => 50
         ),
         'pe' => array(
-            'full' => 220000,
-            'part' => 14000
+            'full' => 1700,
+            'part' => 70
         ),
         'se' => array(
-            'full' => 250000,
-            'part' => 20000
+            'full' => 2500,
+            'part' => 100
         )
     );
 
